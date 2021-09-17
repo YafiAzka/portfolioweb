@@ -9,8 +9,6 @@ class DestinationCarousel extends StatefulWidget {
 }
 
 class _DestinationCarouselState extends State<DestinationCarousel> {
-  final String imagePath = 'assets/images/';
-
   final CarouselController _controller = CarouselController();
 
   List _isHovering = [false, false, false, false, false, false, false];
@@ -25,7 +23,6 @@ class _DestinationCarouselState extends State<DestinationCarousel> {
     'assets/images/south_america.jpg',
     'assets/images/australia.jpg',
     'assets/images/antarctica.jpg',
-    'assets/images/japan.jpg',
   ];
 
   final List<String> places = [
@@ -35,7 +32,6 @@ class _DestinationCarouselState extends State<DestinationCarousel> {
     'SOUTH AMERICA',
     'AUSTRALIA',
     'ANTARCTICA',
-    'JAPAN',
   ];
 
   List<Widget> generateImageTiles(screenSize) {

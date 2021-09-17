@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_lorem/flutter_lorem.dart';
+import 'package:portfolio/models/responsive.dart';
 import 'package:portfolio/shared/theme.dart';
 
 class AboutPage extends StatelessWidget {
@@ -21,10 +22,47 @@ class AboutPage extends StatelessWidget {
       );
     }
 
+    // Widget profile() {
+    //   return Container(
+    //     width: screenSize.width / 12,
+    //     height: screenSize.height / 4,
+    //     margin: EdgeInsets.only(left: defaultMargin),
+    //     decoration: BoxDecoration(
+    //       image: DecorationImage(
+    //         fit: BoxFit.cover,
+    //         image: AssetImage(
+    //           'me.jpg',
+    //         ),
+    //       ),
+    //     ),
+    //   );
+    // }
+
+    Widget content() {
+      return Container(
+        child: Column(
+          children: [
+            Text(
+              lorem(
+                words: 500,
+              ),
+              style: blackTextStyle.copyWith(
+                fontWeight: light,
+              ),
+              maxLines: 10,
+              textAlign: TextAlign.start,
+              overflow: TextOverflow.ellipsis,
+            ),
+          ],
+        ),
+      );
+    }
+
     return Container(
       width: double.infinity,
+      height: screenSize.height * 0.5,
       margin: EdgeInsets.symmetric(
-        horizontal: screenSize.width / 15,
+        horizontal: screenSize.width / 10,
         vertical: defaultMargin,
       ),
       padding: EdgeInsets.symmetric(
@@ -39,37 +77,7 @@ class AboutPage extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           title(),
-          Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Expanded(
-                child: Text(
-                  lorem(
-                    paragraphs: 2,
-                    words: 200,
-                  ),
-                  style: blackTextStyle.copyWith(
-                    fontWeight: light,
-                  ),
-                  textAlign: TextAlign.start,
-                  overflow: TextOverflow.visible,
-                ),
-              ),
-              Container(
-                width: screenSize.width / 12,
-                height: screenSize.height / 4,
-                margin: EdgeInsets.only(left: defaultMargin),
-                decoration: BoxDecoration(
-                  image: DecorationImage(
-                    fit: BoxFit.cover,
-                    image: AssetImage(
-                      'me.jpg',
-                    ),
-                  ),
-                ),
-              ),
-            ],
-          ),
+          content(),
         ],
       ),
     );
