@@ -18,6 +18,14 @@ TextStyle blackTextStyle = GoogleFonts.ubuntu(
   color: blackColor,
 );
 
+TextStyle pinkTextStyle = GoogleFonts.ubuntu(
+  color: primaryColor,
+);
+
+TextStyle blueTextStyle = GoogleFonts.ubuntu(
+  color: secondaryColor,
+);
+
 FontWeight light = FontWeight.w300;
 FontWeight regular = FontWeight.w400;
 FontWeight medium = FontWeight.w500;

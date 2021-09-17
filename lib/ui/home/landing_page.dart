@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/models/responsive.dart';
 import 'package:portfolio/shared/theme.dart';
 import 'package:portfolio/ui/pages/about_page.dart';
+import 'package:portfolio/ui/pages/carousel.dart';
 import 'package:portfolio/ui/pages/header_page.dart';
 
 class LandingPage extends StatelessWidget {
@@ -66,15 +68,29 @@ class LandingPage extends StatelessWidget {
     return Scaffold(
       extendBodyBehindAppBar: true,
       backgroundColor: bgColor,
-      appBar: PreferredSize(
-        child: appBar(),
-        preferredSize: Size(screenSize.width, 1000),
-      ),
+      appBar: ResponsiveWidget.isSmallScreen(context)
+          ? AppBar(
+              elevation: 0,
+              centerTitle: true,
+              backgroundColor: transparentColor,
+              title: Text(
+                'Portfolio',
+                style: blackTextStyle.copyWith(
+                  fontSize: 30,
+                  fontWeight: bold,
+                ),
+              ),
+            )
+          : PreferredSize(
+              child: appBar(),
+              preferredSize: Size(screenSize.width, 1000),
+            ),
       body: SingleChildScrollView(
         child: Column(
           children: [
-            HeaderPage(),
-            AboutPage(),
+            HeaderPage(screenSize: screenSize),
+            AboutPage(screenSize: screenSize),
+            DestinationCarousel(),
           ],
         ),
       ),

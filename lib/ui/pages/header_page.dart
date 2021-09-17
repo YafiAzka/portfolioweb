@@ -2,14 +2,17 @@ import 'package:flutter/material.dart';
 import 'package:portfolio/shared/theme.dart';
 
 class HeaderPage extends StatelessWidget {
-  const HeaderPage({Key? key}) : super(key: key);
+  final screenSize;
+  const HeaderPage({Key? key, this.screenSize}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    // var screenSize = MediaQuery.of(context).size;
+
     image() {
       return Container(
-        width: double.infinity,
-        height: 500,
+        width: screenSize.width,
+        height: screenSize.height * 0.8,
         decoration: BoxDecoration(
           image: DecorationImage(
             image: AssetImage('header.jpg'),
@@ -27,7 +30,7 @@ class HeaderPage extends StatelessWidget {
             Text(
               "It's me, Azka",
               style: whiteTextStyle.copyWith(
-                fontSize: 60,
+                fontSize: screenSize.width / 20,
                 fontWeight: extra,
               ),
             ),
@@ -35,7 +38,7 @@ class HeaderPage extends StatelessWidget {
             Text(
               'Welcome to my portfolio website',
               style: whiteTextStyle.copyWith(
-                fontSize: 40,
+                fontSize: screenSize.width / 40,
                 fontWeight: medium,
               ),
             ),
