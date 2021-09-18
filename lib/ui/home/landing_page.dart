@@ -2,8 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:portfolio/models/responsive.dart';
 import 'package:portfolio/shared/theme.dart';
 import 'package:portfolio/ui/pages/about_page.dart';
-import 'package:portfolio/ui/pages/carousel.dart';
+import 'package:portfolio/ui/pages/portiofolio_page.dart';
 import 'package:portfolio/ui/pages/header_page.dart';
+import 'package:portfolio/ui/pages/skills_page.dart';
 
 class LandingPage extends StatelessWidget {
   const LandingPage({Key? key}) : super(key: key);
@@ -90,7 +91,8 @@ class LandingPage extends StatelessWidget {
           children: [
             HeaderPage(screenSize: screenSize),
             AboutPage(screenSize: screenSize),
-            DestinationCarousel(),
+            SkillsPage(screenSize: screenSize),
+            PortofolioPage(),
           ],
         ),
       ),

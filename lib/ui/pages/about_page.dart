@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_lorem/flutter_lorem.dart';
-import 'package:portfolio/models/responsive.dart';
 import 'package:portfolio/shared/theme.dart';
 
 class AboutPage extends StatelessWidget {
@@ -21,22 +20,6 @@ class AboutPage extends StatelessWidget {
         ),
       );
     }
-
-    // Widget profile() {
-    //   return Container(
-    //     width: screenSize.width / 12,
-    //     height: screenSize.height / 4,
-    //     margin: EdgeInsets.only(left: defaultMargin),
-    //     decoration: BoxDecoration(
-    //       image: DecorationImage(
-    //         fit: BoxFit.cover,
-    //         image: AssetImage(
-    //           'me.jpg',
-    //         ),
-    //       ),
-    //     ),
-    //   );
-    // }
 
     Widget content() {
       return Container(
