@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_lorem/flutter_lorem.dart';
 import 'package:portfolio/shared/theme.dart';
 
 class AboutPage extends StatelessWidget {
@@ -26,9 +25,7 @@ class AboutPage extends StatelessWidget {
         child: Column(
           children: [
             Text(
-              lorem(
-                words: 500,
-              ),
+              'Hello, Am Yafi Azka',
               style: blackTextStyle.copyWith(
                 fontWeight: light,
               ),

@@ -8,6 +8,7 @@ Color secondaryColor = Color(0xffa7bdbf);
 Color whiteColor = Color(0xfff5f6fa);
 Color blackColor = Color(0xff2c3e50);
 Color bgColor = Color(0xffe5e5e5);
+Color appBarColor = Color(0xff95a5a6);
 Color transparentColor = Colors.transparent;
 
 TextStyle whiteTextStyle = GoogleFonts.ubuntu(

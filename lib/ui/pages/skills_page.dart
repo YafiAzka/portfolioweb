@@ -168,7 +168,7 @@ class SkillsPage extends StatelessWidget {
                           ),
                           SizedBox(height: 10),
                           Text(
-                            'UI / UX Engineer, Flutter Developer',
+                            'UI / UX Designer, Flutter Developer',
                             style: blackTextStyle.copyWith(
                               fontWeight: bold,
                             ),
