@@ -2,10 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:portfolio/models/responsive.dart';
 import 'package:portfolio/shared/theme.dart';
 
-class AboutMePage extends StatelessWidget {
+class AboutMePage extends StatefulWidget {
   final screenSize;
   AboutMePage({Key? key, this.screenSize}) : super(key: key);
 
+  @override
+  _AboutMePageState createState() => _AboutMePageState();
+}
+
+class _AboutMePageState extends State<AboutMePage> {
   List boutme = [
     {'title': 'Profile', 'subtitle': 'UI / UX Engineer, Flutter Developer'},
     {'title': 'Name', 'subtitle': 'Muhammad Yafi Azka'},
@@ -32,10 +37,10 @@ class AboutMePage extends StatelessWidget {
     Widget image() {
       return Container(
         width: ResponsiveWidget.isLargeScreen(context)
-            ? screenSize.width / 9.5
+            ? widget.screenSize.width / 9.5
             : 146,
         height: ResponsiveWidget.isLargeScreen(context)
-            ? screenSize.height / 3.2
+            ? widget.screenSize.height / 3.2
             : 192,
         decoration: BoxDecoration(
           image: DecorationImage(
@@ -77,7 +82,7 @@ class AboutMePage extends StatelessWidget {
       }
 
       return Container(
-        width: screenSize.width / 2.5,
+        width: widget.screenSize.width / 2.5,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: boutme
@@ -97,7 +102,7 @@ class AboutMePage extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           image(),
-          SizedBox(width: screenSize.width / 10),
+          SizedBox(width: widget.screenSize.width / 10),
           profile(),
         ],
       );
@@ -107,13 +112,13 @@ class AboutMePage extends StatelessWidget {
       width: double.infinity,
       // height: screenSize.height * 0.57,
       margin: EdgeInsets.only(
-        left: screenSize.width / 10,
-        right: screenSize.width / 10,
+        left: widget.screenSize.width / 10,
+        right: widget.screenSize.width / 10,
         top: defaultMargin,
       ),
       padding: EdgeInsets.symmetric(
-        horizontal: screenSize.width / 12.5,
-        vertical: screenSize.height / 12.5,
+        horizontal: widget.screenSize.width / 12.5,
+        vertical: widget.screenSize.height / 12.5,
       ),
       decoration: BoxDecoration(
         color: whiteColor,
