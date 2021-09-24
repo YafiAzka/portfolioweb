@@ -3,21 +3,11 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "assets/AssetManifest.json": "733b4eb7c3c1279f00c3164bf55a856e",
+  "assets/AssetManifest.json": "932ac3809704e21e41f9bbc24edd71be",
 "assets/assets/header.jpg": "d6f851f1b9f1d688e5f1560a7209b869",
-"assets/assets/images/africa.jpg": "27fc2c6667bd5bd7bba8117fafe28d86",
-"assets/assets/images/animals.jpg": "2e218a94e7842a946d772082ac8c5590",
-"assets/assets/images/antarctica.jpg": "71e86242fca831839833d1caa23f107e",
-"assets/assets/images/asia.jpg": "bbcf97c1be29e77360e8407b7e2eaa05",
-"assets/assets/images/australia.jpg": "6170e8a703652c6b814dca7020050086",
-"assets/assets/images/cover.jpg": "e1e4b2e46b8d6eabb7330afb0c0d30ff",
-"assets/assets/images/europe.jpg": "29a721b78efc7f928faf042c88806468",
-"assets/assets/images/google_logo.png": "b75aecaf9e70a9b1760497e33bcd6db1",
-"assets/assets/images/japan.jpg": "c2d9366333953b5b8543564fca17c976",
-"assets/assets/images/north_america.jpg": "867d729d34a03bf38136bd45954ec218",
-"assets/assets/images/photography.jpeg": "b0d14d6d4a94d33404a7df1344e7533b",
-"assets/assets/images/south_america.jpg": "1920c86e11a06921b339f00ff1d0ddea",
-"assets/assets/images/trekking.jpg": "283eae13ae9587874b93fed5c9b4a118",
+"assets/assets/images/flutter_airplane.jpg": "3147ff183e32e48133ed6a4ea8c9638f",
+"assets/assets/images/laravel_flutter.jpg": "6f8e6ec9c87815bc2b56d0d0894ac81a",
+"assets/assets/images/mastering_flutter.jpg": "fd0c1162f1f96b413d6297cbc9d219f6",
 "assets/assets/me.jpg": "d5fcd32913e0944b3c1a79e2848304cc",
 "assets/FontManifest.json": "dc3d03800ccca4601324923c0b1d6d57",
 "assets/fonts/MaterialIcons-Regular.otf": "4e6447691c9509f7acdbf8a931a85ca1",
@@ -26,9 +16,9 @@ const RESOURCES = {
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
-"index.html": "4137ad70b3aefe9d0d74f97faab39941",
-"/": "4137ad70b3aefe9d0d74f97faab39941",
-"main.dart.js": "f65552ae3af5aab432c22fb368855c5c",
+"index.html": "c277dadc00e4eaa22638e5633ca31dca",
+"/": "c277dadc00e4eaa22638e5633ca31dca",
+"main.dart.js": "d4edcece95850e0b8d74dc9ef3d0c27f",
 "manifest.json": "5a2c0526f1fe73e6f211bc7a9d15c210",
 "version.json": "426313f2f3133c2f20415344c4a22df3"
 };

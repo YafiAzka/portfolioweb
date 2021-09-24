@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/models/responsive.dart';
 import 'package:portfolio/shared/theme.dart';
-import 'package:portfolio/ui/pages/about_page.dart';
 import 'package:portfolio/ui/pages/footer_page.dart';
 import 'package:portfolio/ui/pages/portiofolio_page.dart';
 import 'package:portfolio/ui/pages/header_page.dart';
-import 'package:portfolio/ui/pages/skills_page.dart';
+import 'package:portfolio/ui/pages/about_me_page.dart';
 
 class LandingPage extends StatefulWidget {
   LandingPage({Key? key}) : super(key: key);
@@ -66,14 +65,6 @@ class _LandingPageState extends State<LandingPage> {
             ),
             SizedBox(width: 35),
             Text(
-              'Skils',
-              style: whiteTextStyle.copyWith(
-                fontSize: 18,
-                fontWeight: semi,
-              ),
-            ),
-            SizedBox(width: 35),
-            Text(
               'Portfolio',
               style: whiteTextStyle.copyWith(
                 fontSize: 18,
@@ -118,8 +109,7 @@ class _LandingPageState extends State<LandingPage> {
         child: Column(
           children: [
             HeaderPage(screenSize: screenSize),
-            AboutPage(screenSize: screenSize),
-            SkillsPage(screenSize: screenSize),
+            AboutMePage(screenSize: screenSize),
             PortofolioPage(),
             FooterPage(screenSize: screenSize),
           ],
